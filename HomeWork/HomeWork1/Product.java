@@ -82,7 +82,7 @@ public class Product {
      * @return Информация по продукту
      */
     String displayInfo(){
-        return String.format("%s - %s - %f", brand, name, price);
+        return String.format("%s - %s - %.2f", brand, name, price);
     }
 
 }

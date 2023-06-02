@@ -39,7 +39,7 @@ public class BottleOfWaterVendingMachine {
         return null;
     }
 
-    public  Product getChocolate(String name, double price, int calories, double weight){
+    public  Product getChocolate(String name, int calories, double weight){
         for (Product product : products){
             if (product instanceof  Chocolate){
                 if (product.getName() == name &&

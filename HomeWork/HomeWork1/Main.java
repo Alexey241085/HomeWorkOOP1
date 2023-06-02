@@ -62,7 +62,7 @@ public class Main {
 
         BottleOfWaterVendingMachine machine = new BottleOfWaterVendingMachine(products);
 
-        BottleOfWater bottleOfWaterRes =  machine.getBottleOfWater("Вода3", 3);
+        BottleOfWater bottleOfWaterRes =  machine.getBottleOfWater("Вода4", 1);
         if (bottleOfWaterRes != null){
             System.out.println("Вы купили: ");
             System.out.println(bottleOfWaterRes.displayInfo());
@@ -74,14 +74,20 @@ public class Main {
 
         Product bottleOfMilkRes = machine.getBottleOfMilk("Молоко", 1, 3);
         if (bottleOfMilkRes != null){
-            System.out.print("Вы купили: ");
+            System.out.println("Вы купили: ");
             System.out.println(bottleOfMilkRes.displayInfo());
         }
+        else {
+            System.out.println("Такой бутылки c молоком не в автомате");
+        }
 
-        Product chocolateRes = machine.getChocolate("Горький Шоколод", 300, 200, 150);
+        Product chocolateRes = machine.getChocolate("Горький Шоколод", 200, 150);
         if(chocolateRes != null){
-            System.out.print("You buy: ");
+            System.out.println("You buy: ");
             System.out.println(chocolateRes.displayInfo());
+        }
+        else {
+            System.out.println("Такого шоколода нет в автомате");
         }
 
     }

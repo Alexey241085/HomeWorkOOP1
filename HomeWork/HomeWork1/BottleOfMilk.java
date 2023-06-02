@@ -23,7 +23,7 @@ public class BottleOfMilk extends Product {
     @Override
     String displayInfo() {
         //return super.displayInfo();
-        return String.format("%s - %s - %f - объем: %d", brand, name, price, volume);
+        return String.format("%s - %s - %.2f рублей - объем: %d литров", brand, name, price, volume);
 
     }
 }
